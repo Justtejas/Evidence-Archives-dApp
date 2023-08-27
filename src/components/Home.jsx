@@ -25,17 +25,19 @@ const Home = () => {
 	];
 	return (
 		<div className='rounded-lg'>
-			<h1 className='mt-10 ml-5 text-3xl font-medium'>Evidences :</h1>
+			<h1 className='mt-10 ml-5 sm:text-3xl font-medium lg:text-2xl'>
+				Evidences :
+			</h1>
 			<div className=' my-14 sm:mx-10'>
 				<ul className='mx-auto'>
-					<div className='flex flex-col w-1/2 ml-10'>
+					<div className='flex flex-col w-1/2 ml-8'>
 						<hr className='mb-5 w-full' />
 						{evidence.map((evidence) => (
 							<li key={evidence.id}>
-								<span className='sm:text-2xl text-lg sm:mx-1 mx-1 md:mr-30'>
+								<span className='sm:text-xl md:text-lg sm:mx-1 mx-1 md:mr-26 lg:text-xl'>
 									{evidence.name}
 								</span>
-								<span className='sm:text-2xl text-lg sm:mx-12 lg:mx-64 mx-8 md:ml-36'>
+								<span className='sm:text-2xl text-lg sm:mx-12 lg:mx-64 mx-8 md:ml-36 lg:text-xl'>
 									{"#" + evidence.id}
 								</span>
 								<hr className='my-5' />
